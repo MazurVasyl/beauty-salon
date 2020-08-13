@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art's Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/roboto/stylesheet.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body style="font-family: Montserrat, sans-serif;">
+    <!-- navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: rgba(255, 255, 255, 0.6);"
+    >
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="images\emblema.jpg"
+          alt="logo"
+          class="rounded-circle"
+          style="width: 140px;"
+        />
+      </a>
+
+      <div class="container justify-content-end pr-0 mr-0">
+        <!-- Links -->
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold"
+              style="font-size: x-large;"
+              href="#"
+              >ГЛАВНАЯ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold"
+              style="font-size: x-large;"
+              href="#"
+              >УСЛУГИ И ЦЕНЫ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold"
+              style="font-size: x-large;"
+              href="#"
+              >НАШИ РАБОТЫ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold"
+              style="font-size: x-large;"
+              href="#"
+              >ОТЗЫВЫ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold pr-0"
+              style="font-size: x-large;"
+              href="#"
+              >КОНТАКТЫ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- cariusel -->
+
+    <div class="container-fluid p-0">
+      <div id="slider" class="carousel slide" data-ride="carousel">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images\1.jpg" alt="1" />
+
+            <div
+              class="carousel-caption"
+              style="left: 10%; right: 20%; text-align: start; bottom: 30%;"
+            >
+              <h1 class="text-white px-4" style="font-size: 80px;">BEAUTY</h1>
+              <h2 class="text-white px-4" style="font-size: 65px;">SALON</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images\2.jpg" alt="2" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images\3.jpg" alt="3" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images\4.jpg" alt="4" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images\5.jpg" alt="5" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#slider" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slider" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li
+            data-target="#slider"
+            data-slide-to="0"
+            class="active"
+            style="width: 15px; height: 15px; border-radius: 50%;"
+          ></li>
+          <li
+            data-target="#slider"
+            data-slide-to="1"
+            style="width: 15px; height: 15px; border-radius: 50%;"
+          ></li>
+          <li
+            data-target="#slider"
+            data-slide-to="2"
+            style="width: 15px; height: 15px; border-radius: 50%;"
+          ></li>
+          <li
+            data-target="#slider"
+            data-slide-to="3"
+            style="width: 15px; height: 15px; border-radius: 50%;"
+          ></li>
+          <li
+            data-target="#slider"
+            data-slide-to="4"
+            style="width: 15px; height: 15px; border-radius: 50%;"
+          ></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About us -->
+
+    <div class="container-fluid bg-success">
+      <div class="black-line mb-5 pb-2">
+        <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+          BEAUTY SALON за кадром
+        </h1>
+        <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">О НАС</p>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 bg-warning">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item list-group-item-action border-0"
+                onmouseover="showPhoto()"
+              >
+                <h4 class="text-uppercase">Lorem ipsum dolor sit.</h4>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Itaque velit qui eos facilis veritatis ipsa et impedit! Eos,
+                  qui eum!</span
+                >
+              </li>
+
+              <li
+                class="list-group-item list-group-item-action border-0"
+                onmouseover="showPhoto()"
+              >
+                <h4 class="text-uppercase">Lorem ipsum dolor sit.</h4>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Itaque velit qui eos facilis veritatis ipsa et impedit! Eos,
+                  qui eum!</span
+                >
+              </li>
+
+              <li
+                class="list-group-item list-group-item-action border-0"
+                onmouseover="showPhoto()"
+              >
+                <h4 class="text-uppercase">Lorem ipsum dolor sit.</h4>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Itaque velit qui eos facilis veritatis ipsa et impedit! Eos,
+                  qui eum!</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 bg-primary">
+            <img src="images\photo1.jpg" alt="1" class="w-100 photo" />
+            <img src="images\photo2.jpg" alt="2" class="w-100 photo" />
+            <img src="images\photo3.jpg" alt="3" class="w-100 photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services and prices -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="black-line mb-5 pb-2">
+            <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+              Красота - доступная для всех
+            </h1>
+            <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">УСЛУГИ И ЦЕНЫ</p>  
+          </div>
+
+          <a href="#" class="btn rounded-0 main-menu-btn" role="button">Все услуги</a>
+
+        </div>
+
+        <div class="col-md-6 d-flex bg-warning justify-content-end">
+          <div class="row bg-secondary w-50">
+            <i
+              class="fas fa-user-graduate"
+              style="font-size: 48px; color: red;"
+            ></i>
+
+            <p class="bg-primary">
+              Постоянное обучение специалистов как в Украине, так и за рубежом,
+              участие в международных конкурсах и обучающих мероприятиях — залог
+              профессионального роста наших мастеров
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 p-4 parentOverPhoto">
+          <div class="container-fluid over w-100 h-100">
+            <div class="row pt-5 pl-5 h-25">
+              <h6>Маникюр комплекс</h6>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <span>Снятие, маникюр и однотонное покрытие гель-лаком</span>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <a href="">Подпобнее о процедуре</a>
+            </div>
+          </div>
+          <img
+            src="images\photo1.jpg"
+            alt="1"
+            class="services w-100"
+            onmouseover="showOverPhoto()"
+          />
+        </div>
+        <div class="col-sm-6 p-4 parentOverPhoto">
+          <div class="container-fluid over w-100 h-100">
+            <div class="row pt-5 pl-5 h-25">
+              <h6>Маникюр комплекс</h6>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <span>Снятие, маникюр и однотонное покрытие гель-лаком</span>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <a href="">Подпобнее о процедуре</a>
+            </div>
+          </div>
+          <img
+            src="images\photo2.jpg"
+            alt="2"
+            class="services w-100"
+            onmouseover="showOverPhoto()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-success">
+      <div class="row">
+        <div class="col-sm-6 p-4 parentOverPhoto">
+          <div class="container-fluid over w-100 h-100">
+            <div class="row pt-5 pl-5 h-25">
+              <h6>Маникюр комплекс</h6>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <span>Снятие, маникюр и однотонное покрытие гель-лаком</span>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <a href="">Подпобнее о процедуре</a>
+            </div>
+          </div>
+          <img
+            src="images\photo3.jpg"
+            alt="3"
+            class="services w-100"
+            onmouseover="showOverPhoto()"
+          />
+        </div>
+        <div class="col-sm-6 p-4 parentOverPhoto">
+          <div class="container-fluid over w-100 h-100">
+            <div class="row pt-5 pl-5 h-25">
+              <h6>Маникюр комплекс</h6>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <span>Снятие, маникюр и однотонное покрытие гель-лаком</span>
+            </div>
+
+            <div class="row pt-3 pl-5 h-10">
+              <a href="">Подпобнее о процедуре</a>
+            </div>
+          </div>
+          <img
+            src="images\photo4.jpg"
+            alt="4"
+            class="services w-100"
+            onmouseover="showOverPhoto()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+
+    <div class="container-fluid pt-sm-5 pb-sm-5 pt-2 pb-2 feedback-cont">
+      <div class="black-line mb-5 pb-2">
+        <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+          О нас говорят
+        </h1>
+        <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">FEEDBACK ОТ КЛИЕНТОВ</p>
+      </div>
+
+      <ul class="list-inline feedback-list">
+
+        <li class="list-inline-item fb-list-it"
+            onclick="showFeedbackSms(this)"
+            onmouseover="changeColorRedFedback(this)"
+            onmouseout="changeColorGreyFedback(this)">
+            
+            СМС ОПРОС
+        </li>
+
+        <li class="list-inline-item fb-list-it"
+            onclick="showFeedbackInstagram(this)"
+            onmouseover="changeColorRedFedback(this)"
+            onmouseout="changeColorGreyFedback(this)">
+        
+            ИНСТАГРАМ
+        </li>
+
+      </ul>
+
+      <div class="row">
+        <div class="col-sm-3 p-2 bg-primary">
+          <div class="container-fluid bg-light">Name</div>
+          <div class="container-fluid bg-light">Date</div>
+          <div class="container-fluid bg-light">Servise:</div>
+          <div class="container-fluid bg-light">stars</div>
+          <div class="container-fluid bg-light">Quality of procedure</div>
+          <div class="container-fluid bg-light">stars</div>
+          <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+            Lorem ipsum dolor. Impedit facere eum voluptatibus sapiente hic
+            cumque?
+          </p>
+        </div>
+        <div class="col-sm-3 p-2 bg-secondary">
+          <div class="container-fluid bg-light">Name</div>
+          <div class="container-fluid bg-light">Date</div>
+          <div class="container-fluid bg-light">Servise:</div>
+          <div class="container-fluid bg-light">stars</div>
+          <div class="container-fluid bg-light">Quality of procedure</div>
+          <div class="container-fluid bg-light">stars</div>
+          <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+            facere eum voluptatibus sapiente hic cumque?
+          </p>
+        </div>
+        <div class="col-sm-3 p-2 bg-warning">
+          <div class="container-fluid bg-light">Name</div>
+          <div class="container-fluid bg-light">Date</div>
+          <div class="container-fluid bg-light">Servise:</div>
+          <div class="container-fluid bg-light">stars</div>
+          <div class="container-fluid bg-light">Quality of procedure</div>
+          <div class="container-fluid bg-light">stars</div>
+          <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-sm-3 p-2 bg-info">
+          <div class="container-fluid bg-light">Name</div>
+          <div class="container-fluid bg-light">Date</div>
+          <div class="container-fluid bg-light">Servise:</div>
+          <div class="container-fluid bg-light">stars</div>
+          <div class="container-fluid bg-light">Quality of procedure</div>
+          <div class="container-fluid bg-light">stars</div>
+          <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+            Lorem ipsum dolor
+          </p>
+        </div>
+      </div>
+
+      <a href="#" class="btn rounded-0 main-menu-btn" role="button">Все отзывы</a>
+
+      <!-- The Modal Feedback-->
+      <div class="modal fade" id="modal-feedback">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body-feedback"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Franchise -->
+
+    <div class="container-fluid pt-sm-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="black-line mb-5 pb-2">
+            <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+              Стань нашим партнером
+            </h1>
+            <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">ФРАНШИЗА</p>  
+          </div>
+          
+          <h5 class="franchise-h5">
+            МЫ ИЩЕМ ПАРТНЕРОВ ДЛЯ ОТКРЫТИЯ САЛОНА СТУДИИ В ТВОЕМ ГОРОДЕ
+          </h5>
+          <h5 class="franchise-h5">
+            <b>Bloom Nails&Beauty</b> - это совершенно новое направление с новым
+            форматом обслуживания.
+          </h5>
+          <h5 class="franchise-h5">
+            БИЗНЕС КОНЦЕПЦИЯ САЛОНА:
+          </h5>
+
+          <div class="container p-lg-0 m-lg-0">
+
+            <div class="d-sm-flex flex-sm-row pl-0 mb-3">
+              <div class="franch-parent-images">
+                <div class="img-1">
+                </div>
+              </div>
+              <div class="container pl-sm-0 py-2 ml-sm-0 align-self-center">
+                Индивидуальный и современный дизайн
+              </div>
+            </div>
+
+            <div class="d-sm-flex flex-sm-row pl-0 mb-3">
+              <div class="franch-parent-images">
+                <div class="img-2">
+                </div>
+              </div>
+              <div class="container pl-sm-0 py-2 ml-sm-0 align-self-center">
+                Максимальные удобства для клиентов и сотрудников
+              </div>
+            </div>
+
+            <div class="d-sm-flex flex-sm-row pl-0 mb-3">
+              <div class="franch-parent-images">
+                <div class="img-3">
+                </div>
+              </div>
+              <div class="container pl-sm-0 py-2 ml-sm-0 align-self-center">
+                Одновременные процедуры для экономии времени
+              </div>
+            </div>
+
+            <div class="d-sm-flex flex-sm-row pl-0 mb-3">
+              <div class="franch-parent-images">
+                <div class="img-4">
+                </div>
+              </div>
+              <div class="container pl-sm-0 py-2 ml-sm-0 align-self-center">
+                Доступные цены для каждого
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 pt-4 pl-lg-0 pr-5">
+          <div class="container-fluid p-0 franchise-photo">
+            
+            <!-- carousel franchise -->
+
+            <div id="franchise" class="carousel slide" data-ride="carousel">
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/franchise-1.jpg" alt="franchise-1" class="w-100"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/franchise-2.jpg" alt="franchise-2" class="w-100"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/franchise-3.jpg" alt="franchise-3" class="w-100"/>
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+
+
+              <div class="carousel-control-prev-next">
+                <a class="carousel-control-prev a-prev" href="#franchise" data-slide="prev">
+                  <i class="material-icons" style="font-size:36px; color: rgb(128, 128, 128);">&#xe314;</i>
+                </a>
+  
+                <a class="carousel-control-next a-next" href="#franchise" data-slide="next">
+                  <i class="material-icons" style="font-size:36px; color: rgb(128, 128, 128);">&#xe315;</i>
+                </a>
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Vacancy -->
+
+    <div class="container-fluid pt-sm-5">
+      <div class="black-line mb-5 pb-2">
+        <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+          Будь креативным и успешным
+        </h1>
+        <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">ВАКАНСИИ</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-1 text-center vacancy-num">
+              01
+            </div>
+            <div class="col-lg-9 col-sm-11 pl-4">
+              <h5 class="font-weight-bold">
+                МАСТЕР ПО НАРАЩИВАНИЮ РЕСНИЦ
+              </h5>
+
+              <p>
+                Мы становимся больше и открываем второй зал. Требуется Мастер по
+                наращиванию ресниц!
+              </p>
+
+              <p>
+                Требования:
+              </p>
+              <ol class="needed">
+                <li>
+                  Владение техникой и опыт работы по наращиванию ресниц:
+                  классическое наращивание; 2D и 3D Голливуд — желательно.
+                </li>
+                <li>
+                  Консультирование клиентов по услугам наращивания ресниц.
+                </li>
+                <li>
+                  Обязательное соблюдение правил студии.
+                </li>
+                <li>
+                  Уход за рабочим местом.
+                </li>
+                <li>
+                  Любовь к людям!
+                </li>
+                <li>
+                  Желание быть лучшим!
+                </li>
+              </ol>
+
+              <p>
+                Всем нашим мастерам мы предлагаем хорошие условия работы:
+              </p>
+
+              <ul>
+                <li>Высокая заработная плата</li>
+                <li>Полная запись</li>
+                <li>
+                  Все материалы для работы с клиентами (Работа только на
+                  высококачественных материалах)
+                </li>
+                <li>Профессионально оборудованное рабочие место</li>
+                <li>Возможность роста (преподаватели)</li>
+                <li>Гибкий рабочий график</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 pt-4 pl-lg-0 pr-5">
+          <div class="container-fluid p-0 vacancy-photo">
+            <img src="images\vacancy-1.jpg" alt="vacancy" class="w-100" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-md-5 pt-4 pb-md-5 pb-2">
+        <a href="#" class="btn rounded-0 main-menu-btn" role="button">Все вакансии</a>
+      </div>
+
+    </div>
+
+    <!-- Our_work -->
+
+    <div class="container-fluid pt-sm-5 our_work">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="black-line mb-5 pb-2">
+            <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+              Отличайся от всех
+            </h1>
+            <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">НАШИ РАБОТЫ</p>
+          </div>
+
+          <ul class="list-group list-group-horizontal our_work_nav">
+            <li
+              class="list-group-item our-work-photo-li"
+              onclick="showOurWorkPhoto(this)"
+              onmouseover="changeColorRed(this)"
+              onmouseout="changeColorGrey(this)"
+            >
+              МАКИЯЖ
+            </li>
+            <li
+              class="list-group-item our-work-photo-li"
+              onclick="showOurWorkPhoto(this)"
+              onmouseover="changeColorRed(this)"
+              onmouseout="changeColorGrey(this)"
+            >
+              ПРИЧЕСКИ
+            </li>
+            <li
+              class="list-group-item our-work-photo-li"
+              onclick="showOurWorkPhoto(this)"
+              onmouseover="changeColorRed(this)"
+              onmouseout="changeColorGrey(this)"
+            >
+              МАНИКЮР
+            </li>
+            <li
+              class="list-group-item our-work-photo-li"
+              onclick="showOurWorkPhoto(this)"
+              onmouseover="changeColorRed(this)"
+              onmouseout="changeColorGrey(this)"
+            >
+              КОРРЕКЦИЯ БРОВЕЙ
+            </li>
+            <li
+              class="list-group-item our-work-photo-li"
+              onclick="showOurWorkPhoto(this)"
+              onmouseover="changeColorRed(this)"
+              onmouseout="changeColorGrey(this)"
+            >
+              ВСЕ ФОТО
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-fluid our-work-photo">
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-1.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-2.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-3.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-4.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-5.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo"  data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-6.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-7.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-8.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-9.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-10.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-11.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-12.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-13.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-14.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-15.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-16.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-17.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-18.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-19.jpg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-20.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-21.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our-work-photo-img">
+            <div class="img_and_over">
+              <img src="images\our_work-22.jpeg" alt="" class="mh-100 our-work-img" />
+              <div class="over-photo" data-toggle="modal" data-target="#modal-our-work">
+                <div class="rel" onclick="showModalImg()">
+                  <i class='fas fa-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- The Modal our work -->
+            <div class="modal p-0" id="modal-our-work">
+
+              <div class="d-flex justify-content-end fixed-top">
+
+                <div class="btn-over-our-work-img" onclick="playPause()"> <i class="material-icons">play_arrow</i>     </div>
+                <div class="btn-over-our-work-img" > <i class="material-icons">crop_5_4</i>     </div>
+                <div class="btn-over-our-work-img" > <i class="material-icons">apps</i>     </div>
+                <div class="btn-over-our-work-img" data-dismiss="modal"> <i class="material-icons">clear</i>     </div>
+
+              </div>
+
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <img src="" id="img01" style="width: 100%; height: auto;">
+
+                  </div>
+  
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog  -->
+
+    <div class="container-fluid pt-sm-5 pb-sm-5">
+      <div class="black-line mb-5 pb-2">
+        <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+          Самые свежие новости и статьи
+        </h1>
+        <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">БЛОГ</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="container-fluid cont-blog-photo">
+                <img src="images\blog-1.jpg" alt="hair" class="w-100">
+              </div>
+
+            </div>
+            <div class="col-xl-6 col-blog-text">
+
+              <p class="text-muted">29 / 07 / 20</p>
+              <h5>Правильный уход за волосами летом</h5>
+
+              <p>
+                Летом волосы подвергаются серьезному воздействию солнечных лучей, которые могут нанести большой ущерб. Также в этот жаркий сезон к негативным факторам можно отнести соленую...
+              </p>
+              <a href="#">Читать подробнее</a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="container-fluid cont-blog-photo">
+                <img src="images\kraska-volos-771x-r.jpg" alt="hair" class="w-100">
+              </div>
+
+            </div>
+            <div class="col-xl-6 col-blog-text">
+
+              <p class="text-muted">29 / 07 / 20</p>
+              <h5>Правильный уход за волосами летом</h5>
+
+              <p>
+                Летом волосы подвергаются серьезному воздействию солнечных лучей, которые могут нанести большой ущерб. Также в этот жаркий сезон к негативным факторам можно отнести соленую...
+              </p>
+              <a href="#">Читать подробнее</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-md-5 pt-4 pb-md-5 pb-2">
+        <a href="#" class="btn rounded-0 main-menu-btn" role="button">читать все</a>
+      </div>
+      
+    </div>
+
+    
+    <!-- Contacts  -->
+
+    <div class="container-fluid pt-sm-5 pb-sm-5 contacts">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="black-line mb-5 pb-2">
+            <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
+              С нами на связи
+            </h1>
+            <p class="mb-2" style="font-size: 30px; font-family: Montserrat, sans-serif;">КОНТАКТЫ</p>
+          </div>
+
+          <div class="numbers d-flex align-content-center">
+            <span></span>
+            <div>
+              <div class="phone-one">
+                067 568 02 22
+              </div>
+              <div class="phone-two">
+                098 185 11 11
+              </div>
+            </div>
+          </div>
+
+          <div class="address">
+            г. Днепр, ул. Короленко 2
+          </div>
+
+          <div class="work-time">
+            Пн-Вс: с <b>9<span>00</span> - 21<span>00</span></b>
+          </div>
+
+          <div class="pt-md-5 pt-4 pb-md-5 pb-2">
+            <a href="#" class="btn rounded-0 main-menu-btn" role="button">с нами на связи</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3">
+          <iframe class="h-sm-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5421963778354!2d35.04133751554011!3d48.46531277925094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e706f17ec5%3A0x1a5e19bec6110be2!2z0LLRg9C70LjRhtGPINCa0L7RgNC-0LvQtdC90LrQsCwgMiwg0JTQvdGW0L_RgNC-zIEsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1suk!2sua!4v1596724098276!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-fluid footer">
+
+      <ul class="footer_nav">
+        <li class="footer-li"><a href="#" >ГЛАВНАЯ</a></li>
+        <li class="footer-li"><a href="#" >УСЛУГИ И ЦЕНЫ</a></li>
+        <li class="footer-li"><a href="#" >ВАКАНСИИ</a></li>
+        <li class="footer-li"><a href="#" >НАШИ РАБОТЫ </a></li>
+        <li class="footer-li"><a href="#" >БЛОГ</a></li>
+        <li class="footer-li"><a href="#" >КОНТАКТЫ</a></li>
+      </ul>
+      
+    </div>  
+
+    <script>
+      $(document).ready(function(){
+        $('.phone-one').tooltip({title: "Позвонить нам по номеру 067 568 02 22", trigger: "hover"}); 
+      
+        $('.phone-two').tooltip({title: "Позвонить нам по номеру 098 185 11 11", trigger: "hover"}); 
+      });
+      </script>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
