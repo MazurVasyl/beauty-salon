@@ -24,7 +24,7 @@ h1{
 
 
     
-}
+
 
 /* .black-line{
     width: ;
@@ -56,8 +56,9 @@ h4:hover{
 
 /* Feedback */
 
-.container-fluid.feedback-cont{
-    background: rgb(254, 244, 244);
+.container.col-lg-12.pt-sm-5.pb-sm-5.pt-2.pb-2.feedback-cont{
+    width: 100%;
+    background: rgb(250, 250, 250);
 }
 
 .list-inline.feedback-list{
@@ -82,13 +83,53 @@ h4:hover{
     cursor: pointer;
 }
 
+.col-xl-3.col-md-4.fb-box{
+    padding-left: 45px;
+}
+
+.solid-red{
+    border: 1px solid rgb(254, 125, 154);
+    padding: 30px 0 30px 0;
+}
+
+.info-content{
+    position: relative;
+    right: 30px;
+    background: white;
+    padding-top: 30px;
+}
+
+.info-content div {
+    padding-left: 30px;
+}
+
+.fb-name{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.fb-date{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.fb-serv-qual{
+    font-weight: 500;
+}
+
+.stars{
+    padding-bottom: 15px;
+    color: rgb(254, 125, 154);
+}
+
+
 .p-modal-feedback{
     background: rgb(254, 244, 244);
     height: 25px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 10px 30px 45px 30px;
+    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -479,6 +520,57 @@ iframe{
 
 @media (max-width: 992px) {
 
+    /* feedback */
+
+    .col-xl-3.col-md-4.fb-box{
+        padding-left: 30px;
+    }
+
+    .col-xl-3.col-md-4.fb-box:last-child{
+        display: none;
+    }
+    
+    .solid-red{
+        padding: 15px 0 15px 0;
+    }
+    
+    .info-content{
+        position: relative;
+        right: 15px;
+        background: white;
+        padding-top: 15px;
+    }
+    
+    .info-content div {
+        padding-left: 15px;
+    }
+    
+    .fb-name{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    
+    .fb-date{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    
+    .fb-serv-qual{
+        font-size: 14px;
+    }
+    
+    .stars{
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+    
+    
+    .p-modal-feedback{
+        font-size: 14px;
+        height: 25px;
+        padding: 10px 15px 20px 15px;
+    }
+
     /* franchise */
 
     .container.pl-sm-0.py-2.ml-sm-0.align-self-center{
@@ -499,6 +591,12 @@ iframe{
 }
 
 @media (max-width: 768px) {
+
+    /* feedback */
+
+    .col-xl-3.col-md-4.fb-box:nth-child(n+2){
+        display: none;
+    }
 
     /* footer */
 
