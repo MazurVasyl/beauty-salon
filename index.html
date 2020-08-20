@@ -18,7 +18,7 @@
     <!-- navbar -->
 
     <nav
-      class="navbar navbar-expand-lg fixed-top"
+      class="navbar navbar-expand-lg"
       style="background-color: rgba(255, 255, 255, 0.6);"
     >
       <!-- Brand/logo -->
@@ -339,7 +339,7 @@
 
     <!-- Feedback -->
 
-    <div class="row feedback-row">
+
       <div class="container col-lg-12 pt-sm-5 pb-sm-5 pt-2 pb-2">
         <div class="black-line mb-5 pb-2">
           <h1 class="mb-0" style="font-weight: 800; font-size: 46px;">
@@ -368,143 +368,274 @@
   
         </ul>
   
-        <div class="row row-sms">
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">01.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </p>
+        <div class="d-flex align-items-center row-bg-sms-inst">
+          
+          <div class="prev-fb" onclick="prevFeedback()"><i class="fas fa-angle-left"></i></div>
+
+          <div class="row row-sms">
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">01.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">02.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor sit amet
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">02.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">03.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor sit amet sit amet
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">03.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet sit amet
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">04.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">04.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>        
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">05.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
               </div>
             </div>
-          </div>        
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">05.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">06.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">06.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">07.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">07.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
+            <div class="col-xl-3 col-md-4 fb-box-sms">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">08.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor Lorem
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">08.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-4 fb-box">
-            <div class="solid-red">
-              <div class="info-content">
-                <div class="fb-name">Name</div>
-                <div class="fb-date">09.07.2020</div>
-                <div class="fb-serv-qual">Servise:</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <div class="fb-serv-qual">Quality of procedure</div>
-                <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
-                <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
-                  Lorem ipsum dolor
-                </p>
-              </div>
-            </div>
+    
           </div>
   
+          <div class="row row-instagram">
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">01.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">02.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">03.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor sit amet sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">04.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>        
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">05.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">06.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">07.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">08.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 fb-box">
+              <div class="solid-red">
+                <div class="info-content">
+                  <div class="fb-name">Name</div>
+                  <div class="fb-date">09.07.2020</div>
+                  <div class="fb-serv-qual">Servise:</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <div class="fb-serv-qual">Quality of procedure</div>
+                  <div class="stars"><i class="material-icons">&#xe838;&#xe838;&#xe838;&#xe838;&#xe838;</i></div>
+                  <p class="p-modal-feedback" data-toggle="modal" data-target="#modal-feedback">
+                    Lorem ipsum dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="next-fb" onclick="nextFeedback()"><i class="fas fa-angle-right"></i></div>
         </div>
   
         <div class="pt-md-5 pt-4 pb-md-5 pb-2">
@@ -513,7 +644,7 @@
   
         <!-- The Modal Feedback-->
         <div class="modal fade" id="modal-feedback">
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
               <!-- Modal body -->
               <div class="modal-body-feedback"></div>
@@ -523,7 +654,7 @@
   
   
       </div>
-    </div>
+    
 
     <!-- Franchise -->
 

@@ -56,9 +56,40 @@ h4:hover{
 
 /* Feedback */
 
-.row.feedback-row{
+/* .row.feedback-row{
     background: rgb(250, 250, 250);
-    padding: 0 15px 0 15px;
+    margin-right: 0;
+    margin-left: 0;
+} */
+
+.d-flex.align-items-center.row-bg-sms-inst{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row.row-sms{
+    flex-grow: 1;
+}
+
+.prev-fb, .next-fb{
+    width: 15px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.prev-fb i::before,
+.next-fb i::before{
+    position: relative;
+    font-size: 30px;
+    color: gray;
+}
+
+.row.row-instagram{
+    display: none;
+    flex-grow: 1;
 }
 
 .list-inline.feedback-list{
@@ -83,11 +114,11 @@ h4:hover{
     cursor: pointer;
 }
 
-.col-xl-3.col-md-4.fb-box{
+.col-xl-3.col-md-4.fb-box-sms{
     padding-left: 45px;
 }
 
-.col-xl-3.col-md-4.fb-box:nth-child(n+5){
+.col-xl-3.col-md-4.fb-box-sms:nth-child(n+5){
     display: none;
 }
 
@@ -138,6 +169,11 @@ h4:hover{
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: break-all;
+}
+
+.modal-body-feedback{
+    padding: 20px 30px;
+    text-align: center;
 }
 
 /* franchise */
@@ -521,28 +557,24 @@ iframe{
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 
 
     /* feedback */
     
-    .col-xl-3.col-md-4.fb-box:nth-child(n+4){
+    .col-xl-3.col-md-4.fb-box-sms:nth-child(n+4){
         display: none;
     }
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     /* feedback */
 
-    .col-xl-3.col-md-4.fb-box{
+    .col-xl-3.col-md-4.fb-box-sms{
         padding-left: 30px;
     }
-
-    /* .col-xl-3.col-md-4.fb-box:nth-child(n+4){
-        display: none;
-    } */
     
     .solid-red{
         padding: 15px 0 15px 0;
@@ -604,11 +636,11 @@ iframe{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* feedback */
 
-    .col-xl-3.col-md-4.fb-box:nth-child(n+2){
+    .col-xl-3.col-md-4.fb-box-sms:nth-child(n+2){
         display: none;
     }
 
@@ -619,7 +651,7 @@ iframe{
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     /* franchise */
 
