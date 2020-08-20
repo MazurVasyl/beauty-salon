@@ -72,6 +72,48 @@ function showOverPhoto() {
 // onmouseover="changeColorRedFedback(this)"
 // onmouseout="changeColorGreyFedback(this)"
 
+let sms = document.getElementsByClassName(`row row-sms`);
+let insta = document.getElementsByClassName(`row row-instagram`);
+let liFb = document.getElementsByClassName(`list-inline-item fb-list-it`);
+liFb[0].style.color = 'rgb(254, 125, 154)';
+let colorLiFb = 1;
+
+function showFeedbackInsta() {
+    colorLiFb = 1;
+
+    sms[0].style.display = `none`;
+    insta[0].style.display = `flex`;
+    liFb[1].style.color = 'rgb(254, 125, 154)';
+    liFb[0].style.color = 'rgb(189, 189, 189)';
+}
+
+function showFeedbackSms() {
+    colorLiFb = 1;
+
+    sms[0].style.display = `flex`;
+    insta[0].style.display = `none`;
+    liFb[0].style.color = 'rgb(254, 125, 154)';
+    liFb[1].style.color = 'rgb(189, 189, 189)';
+}
+
+function changeColorRedFedback(x) {
+
+    if(x.style.color === "rgb(254, 125, 154)") {
+        colorLiFb = 1;
+    }
+    else{
+        x.style.color = "rgb(254, 125, 154)";
+        colorLiFb = 0;
+    }
+}
+
+function changeColorGreyFedback(x) {
+
+    if(colorLiFb === 0) {
+        x.style.color = "rgb(189, 189, 189)";
+    }   
+}
+
 // feedback buttons prev-fb and next-fb
 
 let btnPrev = document.querySelectorAll(`.prev-fb`);
@@ -90,7 +132,6 @@ function prevFeedback() {
         else{
             fbBoxSms[i].innerHTML = fbBoxSms[i-1].innerHTML;
         }
-        
     }
 }
 
@@ -105,8 +146,7 @@ function nextFeedback() {
         }
         else{
             fbBoxSms[i].innerHTML = fbBoxSms[i+1].innerHTML;
-        }
-        
+        }   
     }
 }
 
@@ -236,7 +276,6 @@ function showOurWorkPhoto(x) {
 
     x.style.color = "rgb(254, 125, 154)";    
     colorLi = 1;
-    // console.log(sliced);
 }
 
 
