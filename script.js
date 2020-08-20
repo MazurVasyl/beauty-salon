@@ -69,10 +69,48 @@ function showOverPhoto() {
 
 // let 
 // onclick="showFeedbackSms(this)"
-            // onmouseover="changeColorRedFedback(this)"
-            // onmouseout="changeColorGreyFedback(this)"
+// onmouseover="changeColorRedFedback(this)"
+// onmouseout="changeColorGreyFedback(this)"
+
+// feedback buttons prev-fb and next-fb
+
+let btnPrev = document.querySelectorAll(`.prev-fb`);
+let fbBoxSms = document.getElementsByClassName(`col-xl-3 col-md-4 fb-box-sms`);
+console.log(fbBoxSms);
 
 
+function prevFeedback() {
+
+    let prevX = fbBoxSms[fbBoxSms.length-1].innerHTML;
+    for(let i = fbBoxSms.length-1; i >= 0; i--){
+
+        if(i === 0) { 
+            fbBoxSms[i].innerHTML = prevX;
+        }
+        else{
+            fbBoxSms[i].innerHTML = fbBoxSms[i-1].innerHTML;
+        }
+        
+    }
+}
+
+
+function nextFeedback() {
+
+    let nextX = fbBoxSms[0].innerHTML;
+    for(let i = 0; i < fbBoxSms.length; i++){
+
+        if(i === fbBoxSms.length-1) {
+            fbBoxSms[i].innerHTML = nextX;
+        }
+        else{
+            fbBoxSms[i].innerHTML = fbBoxSms[i+1].innerHTML;
+        }
+        
+    }
+}
+
+//  feedback modal
 let textToModalFeedback = document.getElementsByClassName(`p-modal-feedback`);
 let modalBodyFeedback = document.getElementsByClassName(`modal-body-feedback`);
 
