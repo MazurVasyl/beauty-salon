@@ -224,7 +224,47 @@ h4:hover{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    transition: .5s ease;
     object-fit: cover;
+}
+
+.inst-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 50%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.inst-overlay:hover{
+    cursor: pointer;
+    opacity: 0;
+}
+  
+.inst-visibil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.inst-visibil i{
+    color: rgb(100, 100, 100);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* franchise */
